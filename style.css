@@ -6,3 +6,8 @@ html, body {
 canvas {
   display: block;
 }
+a {
+  display: block;
+  float: left;
+  padding-right: 5px;
+}
