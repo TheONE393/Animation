@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -6,8 +9,37 @@ html, body {
 canvas {
   display: block;
 }
-a {
+.nav {
+  overflow: hidden;
+  background-color: grey;
+  position: sticky;
+  top: 0;
+}
+.nav a {
   display: block;
   float: left;
-  padding-right: 5px;
+  padding: 5px;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+a:link {
+  color: white;
+}
+a:active {
+  color: rgb(255, 0, 255);
+}
+a:hover {
+  color: rgb(0, 255, 255);
+  background-color: burlywood;
+}
+a:visited {
+  color: white;
+}
+h1 {
+  text-align: center;
+  background-color: aqua;
+}
+h2 {
+  text-align: center;
+  background-color: goldenrod;
 }
