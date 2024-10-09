@@ -33,7 +33,7 @@ function draw() {
     triangle(200, 600, 450, 450, 300, 600);
 
 // Moving Sun
-    if (sunHeight>=20) {
+    if (sunHeight>20) {
         sunHeight-=2;
         if (sunHeight<600) {
             greenVal+=1;
@@ -41,9 +41,7 @@ function draw() {
             blueVal+=0;
         }
     }
-    if (mouseIsPressed == true && sunHeight === 18) {
-          background(0);
-        }
+    
 // //Adding Sun
 //     sunHeight=527-frameCount%527;
 //     if(sunHeight<horizon) {
@@ -61,4 +59,9 @@ function draw() {
      fill('white');
      stroke(0);
      text(`${mouseX}, ${mouseY}`,10,10);
+}
+function mousePressed() {
+    redVal=0;
+    greenVal=0;
+    sunHeight=557; 
 }
